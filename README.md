@@ -1,124 +1,105 @@
 # Business Sales Performance Analysis
 
+**Tools:** Excel | Power BI | DAX
+
 ## Project Overview
 
-This project analyzes Microsoft's Financial Sample dataset using Microsoft Excel and Power BI to evaluate sales performance, profitability, product performance, and discount trends.
+For this project, I used Excel and Power BI to analyze Microsoft's Financial Sample dataset. I wanted to get a better understanding of how businesses use data to evaluate sales, profitability, and overall performance.
 
-The objective was to identify key business insights and develop recommendations that could support better business decisions.
+My main focus was identifying which products and countries performed best, how discounts related to profitability, and what the results could tell someone making business decisions.
 
-An interactive Power BI dashboard was created to visualize financial performance across products, countries, and discount categories.
+**I chose this project so that it could start me off well in terms of getting familiar with the software that I intend on using in the future. I am interested in analyzing what is successful and what needs to be fixed in certain parts of a business.&#x20;**
 
-## Business Question
+## What I Did
 
-Which products, countries, and discount categories are associated with stronger profitability, and how can these insights support business decision-making?
+I started by looking over the dataset in Excel, checking for missing values, duplicates, and formatting issues. I then created PivotTables to compare sales, profit, and profit margins across different categories.
 
-## Tools and Skills Used
+After completing the Excel analysis, I moved the data into Power BI and built an interactive dashboard, with the help of AI and YouTube to guide me as I learn for the first time.
 
-- **Microsoft Excel:** Data validation, PivotTables, and financial analysis
-- **Power BI:** Interactive dashboards, KPI cards, and data visualization
-- **DAX:** Profit margin calculations
-- **Business Analysis:** Trend identification, profitability comparisons, and recommendations
+The dashboard includes:
 
-## Dashboard Overview
+- Four KPIs: Total Sales, Total Profit, Profit Margin, and Units Sold
+- Five charts covering product performance, country performance, discount margins, and monthly trends
+- Year and Country filters for exploring the data
 
-The dashboard includes four key performance indicators:
+I also used DAX to calculate profit margins.
 
-| KPI | Value |
-|---|---|
-| Total Sales | $118.73M |
-| Total Profit | $16.89M |
-| Profit Margin | 14.23% |
-| Total Units Sold | 1.13M |
+## Dashboard
 
-The dashboard also features five visualizations:
 
-1. Total Profit by Product
-2. Profit Margin by Product
-3. Total Profit by Country
-4. Profit Margin by Discount Band
-5. Monthly Sales and Profit Trend
 
-Interactive Year and Country filters allow users to explore financial performance across different categories.
+### Overall Results
 
-## Dashboard Screenshot
+| Metric        | Result   |
+| ------------- | -------- |
+| Total Sales   | $118.73M |
+| Total Profit  | $16.89M  |
+| Profit Margin | 14.23%   |
+| Units Sold    | 1.13M    |
 
-![Business Sales Performance Dashboard](dashboard_screenshot.png)
+## What I Found
 
-## Key Business Findings
+### Product Performance
 
-### 1. Product Profitability
+Paseo had made the highest total profit at approximately $4.80 million. However, Amarilla had the highest profit margin at 15.86%.
 
-Paseo generated the highest total profit at approximately **$4.80 million**.
+This stood out to me because the product generating the most profit wasn't necessarily the one with the highest margin.
 
-However, Amarilla achieved the highest product profit margin at **15.86%**.
+**What surprised me the most was the fact Paseo's profit margin is third in the list, while they're first for total profit.&#x20;**
 
-This demonstrates the importance of evaluating both total profit and profit margin when comparing product performance.
+### Country Performance
 
-### 2. Geographic Performance
+France generated the highest total profit at approximately $3.78 million, while Germany had the highest profit margin at 15.66%.
 
-France generated the highest total country profit at approximately **$3.78 million**.
+These results showed me why it's useful to compare more than one financial metric when evaluating different markets.
 
-Germany achieved the highest country profit margin at **15.66%**.
+### Discount Analysis
 
-These findings suggest that geographic markets differ in profitability and should be evaluated individually.
-
-### 3. Discount Strategy
-
-Profit margins varied across discount categories:
+One of the clearest patterns I found involved discounts.
 
 | Discount Band | Profit Margin |
-|---|---|
-| None | 21.86% |
-| Low | 17.87% |
-| Medium | 14.39% |
-| High | 9.07% |
+| ------------- | ------------- |
+| None          | 21.86%        |
+| Low           | 17.87%        |
+| Medium        | 14.39%        |
+| High          | 9.07%         |
 
-Higher discount categories were associated with lower profit margins.
+Higher discount categories were grouped with lower profit margins. This doesn't mean discounts caused the lower margins, but it gives a business something worth looking into.
 
-This relationship suggests that discount strategies should be evaluated carefully to balance sales volume and profitability.
+**I would recommend businesses figure out if high discounts tend to make up in the sales department for lack of margin profit.&#x20;**
 
-### 4. Sales Trends
+## Challenges and What I Learned
 
-The dashboard visualizes monthly sales and profit trends across 2013 and 2014.
+Building the dashboard helped me understand that business analytics involves more than creating charts.
 
-The dataset includes only part of 2013, so annual comparisons should account for the difference in reporting periods.
+One challenge I encountered was getting the profit margin calculations to display correctly for individual products. I also had to troubleshoot issues with different data tables and filters affecting the dashboard's totals.
 
-## Business Recommendations
+Working through those issues helped me better understand how Power BI calculates and displays information.
 
-Based on the analysis, the following recommendations were developed:
+**The hardest part of this project for me is figuring out how Power BI operates and what works for me. I did a lot of back tracking to really understand how it works so I can get better at using it and displaying data nicely. I am familiar with Excel, since we use it often in class, but this is an app I have not opened yet and I am glad I got the chance to enhance my knowledge of BI now.&#x20;**
 
-**1. Evaluate product performance using multiple metrics.**
+ My Recommendations
 
-Management should consider both total profit and profit margin when assessing products and making resource allocation decisions.
+Based on the analysis, I would recommend that a business:
 
-**2. Review high-discount strategies.**
+1. Look at products using both total profit and profit margin instead of relying on sales only.
+2. Review discount strategies to determine whether increased sales volume makes up for reduced margins.
+3. Investigate differences in profitability between countries to better understand the pricing, costs, and product performance.
 
-Because higher discount categories are associated with lower profit margins, the business should investigate whether additional sales volume offsets the reduction in profitability.
-
-**3. Investigate geographic profitability differences.**
-
-Management should evaluate country-level differences in pricing, costs, product mix, and discount strategies to identify potential opportunities for improvement.
-
-**4. Monitor financial performance regularly.**
-
-Interactive dashboards can help decision-makers track important KPIs, identify trends, and respond to changes in business performance.
+These recommendations are based on descriptive analysis of the sample dataset and would require more investigation before making real business decisions on it.
 
 ## Project Files
 
-- [Power BI Dashboard](Business_Sales_Performance_Dashboard.pbix) — Interactive Power BI report
-- [PDF Case Study](Business_Sales_Performance_Case_Study.pdf) — Project analysis and recommendations
-- [Dashboard Screenshot](dashboard_screenshot.png) — Visual overview of the completed dashboard
+- [Power BI Dashboard](Business_Sales_Performance_Dashboard.pbix)
+- [PDF Case Study](Business_Sales_Performance_Case_Study.pdf)
+- [Dashboard Screenshot](dashboard_screenshot.png)
 
-## Dataset
+**Dataset:** Microsoft Power BI Financial Sample (public sample data)
 
-**Source:** Microsoft Power BI Financial Sample Dataset
+## Final Reflection
 
-This publicly available sample dataset was used for educational and portfolio development purposes.
+This was my first complete business analytics portfolio project. It gave me hands-on experience working with Excel, Power BI, DAX, and data visualization to prepare me for the future.&#x20;
 
-## Conclusion
+More importantly, I learned how to take financial data, identify patterns, and communicate findings that could help support business decisions.
 
-This project strengthened my practical skills in Excel, Power BI, DAX, data visualization, and business analysis.
-
-Through the project, I gained experience transforming financial data into interactive visualizations, identifying profitability patterns, and developing business recommendations based on analytical findings.
-
-The project demonstrates my ability to use business intelligence tools to support data-driven decision-making.
+**I plan on creating and finishing my own analysis project, without relying so much on Youtube and AI but more so the reps I put in myself. I hope to keep practicing it and taking time out of my days to master my craft to give myself a better chance to better opportunities.&#x20;**
